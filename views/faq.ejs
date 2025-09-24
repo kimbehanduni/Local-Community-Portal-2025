@@ -1,0 +1,7 @@
+<h2>FAQ</h2>
+<dl>
+  <% (faqs || []).forEach(f => { %>
+    <dt><%= f.question %></dt>
+    <dd><%= f.answer %></dd>
+  <% }) %>
+</dl>

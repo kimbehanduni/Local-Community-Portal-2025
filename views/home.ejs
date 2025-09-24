@@ -1,0 +1,30 @@
+<section class="featured">
+  <h2>Featured Event</h2>
+  <% if (featured) { %>
+    <article>
+      <h3><%= featured.title %></h3>
+      <p><%= featured.summary %></p>
+      <p><strong><%= featured.date_start %></strong> — <%= featured.venue %></p>
+    </article>
+  <% } else { %>
+    <p>No featured event set.</p>
+  <% } %>
+</section>
+
+<section class="areas">
+  <h2>Community Areas</h2>
+  <div class="grid">
+    <% (areas || []).forEach(a => { %>
+      <a class="card" href="/area/<%= a.id %>">
+        <h3><%= a.name %></h3>
+        <p><%= a.description %></p>
+      </a>
+    <% }) %>
+  </div>
+</section>
+
+<section class="search">
+  <h2>Search</h2>
+  <input id="q" placeholder="Type to search..." />
+  <ul id="results"></ul>
+</section>

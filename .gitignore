@@ -1,0 +1,42 @@
+# Node / package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Test
+coverage/
+.nyc_output/
+dist/
+.tmp/
+.cache/
+
+# Environment files
+.env
+.env.* 
+!.env.example
+
+# Editor/OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+
+# Keep the main database file
+db/*.sqlite*-wal
+db/*.sqlite*-shm
+db/*.sqlite*-journal

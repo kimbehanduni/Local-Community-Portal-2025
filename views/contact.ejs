@@ -1,0 +1,11 @@
+<h2>Contact Us</h2>
+<% if (ok === true) { %><p class="ok">Message sent. Thank you!</p><% } %>
+<% if (errors?.length) { %><ul class="err"><% errors.forEach(e=>{ %><li><%= e %></li><% }) %></ul><% } %>
+
+<form method="post" action="/contact" novalidate>
+  <label>Name<input name="name" required></label>
+  <label>Email<input type="email" name="email" required></label>
+  <label>Subject<input name="subject" required></label>
+  <label>Message<textarea name="message" required></textarea></label>
+  <button type="submit">Send</button>
+</form>

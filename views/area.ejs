@@ -1,0 +1,9 @@
+<h2><%= area?.name || 'Area' %></h2>
+<ul class="listings">
+  <% (listings || []).forEach(l => { %>
+    <li>
+      <strong><%= l.title %></strong> — <%= l.summary %>
+      <div><%= l.date_start %> @ <%= l.venue %></div>
+    </li>
+  <% }) %>
+</ul>
