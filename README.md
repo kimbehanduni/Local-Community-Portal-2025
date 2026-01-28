@@ -8,7 +8,6 @@ activities and services across different community areas.
 ## Technologies Used
 - JavaScript
 - Node.js
-- Express
 - EJS
 - SQLite (better-sqlite3)
 - HTML & CSS
@@ -16,12 +15,11 @@ activities and services across different community areas.
 - Git & GitHub
 
 ## Key Features
-- Server-side routing using Express
-- Dynamic page rendering with EJS templates
 - Database-driven content using SQLite
+- Server-side routing with Express
+- Dynamic rendering with EJS templates
 - Client-side and server-side JavaScript logic
-- AJAX-based search and data retrieval
-- Contact form with data stored in the database
+- AJAX-based data retrieval
 
 ## What I Learned
 - Building a full stack web application using JavaScript
